@@ -60,104 +60,75 @@
 
     <link rel="icon" href="/img/logo.png" type="image/png">
 
-    <!-- ══════════ SEO — JSON-LD Structured Data ══════════ -->
+    <!-- ══════════ ADVANCED SEO — JSON-LD Structured Data ══════════ -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "WebSite",
-                "@id": "https://www.yourdomain.com/#website",
-                "url": "https://www.yourdomain.com/",
-                "name": "رزومه علی — فرانت‌اند دولوپر",
-                "description": "رزومه آنلاین و نمونه‌کارهای علی، توسعه‌دهنده فرانت‌اند",
-                "inLanguage": "fa-IR",
-                "publisher": {
-                    "@id": "https://www.yourdomain.com/#person"
-                }
-            },
-            {
-                "@type": "Person",
-                "@id": "https://www.yourdomain.com/#person",
-                "name": "علی",
-                "alternateName": "Ali",
-                "url": "https://www.yourdomain.com/",
-                "image": {
-                    "@type": "ImageObject",
-                    "url": "https://www.yourdomain.com/img/hero-img.jpg",
-                    "width": 800,
-                    "height": 800
-                },
-                "jobTitle": "توسعه‌دهنده فرانت‌اند و طراح رابط کاربری",
-                "description": "توسعه‌دهنده فرانت‌اند با تمرکز روی ساخت رابط‌های سریع، تمیز و کاربرمحور",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "تهران",
-                    "addressCountry": "IR"
-                },
-                "email": "mailto:ali@email.com",
-                "knowsAbout": [
-                    "React", "Next.js", "JavaScript", "Tailwind CSS",
-                    "Flutter", "Dart", "HTML", "CSS", "UI Design",
-                    "Responsive Design", "Web Performance", "Python"
-                ],
-                "sameAs": [
-                    "https://linkedin.com/in/YOUR_LINKEDIN",
-                    "https://github.com/YOUR_GITHUB",
-                    "https://t.me/ali_dev"
-                ]
-            },
-            {
-                "@type": "WebPage",
-                "@id": "https://www.yourdomain.com/#webpage",
-                "url": "https://www.yourdomain.com/",
-                "name": "علی | توسعه‌دهنده فرانت‌اند و طراح رابط کاربری — رزومه و نمونه‌کارها",
-                "isPartOf": { "@id": "https://www.yourdomain.com/#website" },
-                "about": { "@id": "https://www.yourdomain.com/#person" },
-                "inLanguage": "fa-IR",
-                "datePublished": "2025-01-01",
-                "dateModified": "2025-07-10",
-                "breadcrumb": { "@id": "https://www.yourdomain.com/#breadcrumb" }
-            },
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://www.yourdomain.com/#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "خانه",
-                        "item": "https://www.yourdomain.com/"
-                    }
-                ]
-            },
-            {
-                "@type": "ItemList",
-                "name": "نمونه‌کارها",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "پلتفرم مدیریت دارایی",
-                        "url": "https://www.yourdomain.com/project-1.html"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "داشبورد مدیریت پروژه",
-                        "url": "https://www.yourdomain.com/project-2.html"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "فروشگاه دیجیتال",
-                        "url": "https://www.yourdomain.com/project-3.html"
-                    }
-                ]
-            }
-        ]
+      "@type": "WebSite",
+      "@id": "http://mrashrafi.ir/#website",
+      "url": "http://mrashrafi.ir/",
+      "name": "رزومه علی اشرفی",
+      "publisher": { "@id": "http://mrashrafi.ir/#person" }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "http://mrashrafi.ir/#webpage",
+      "url": "http://mrashrafi.ir/",
+      "name": "علی اشرفی | توسعه‌دهنده فرانت‌اند و اپلیکیشن",
+      "description": "رزومه حرفه‌ای و نمونه‌کارهای علی اشرفی، متخصص طراحی و توسعه وب و اپلیکیشن موبایل.",
+      "about": { "@id": "http://mrashrafi.ir/#person" },
+      "isPartOf": { "@id": "http://mrashrafi.ir/#website" }
+    },
+    {
+      "@type": "Person",
+      "@id": "http://mrashrafi.ir/#person",
+      "name": "علی اشرفی",
+      "alternateName": "Ali Ashrafi",
+      "url": "http://mrashrafi.ir/",
+      "image": "http://mrashrafi.ir/img/hero-img.jpg",
+      "jobTitle": ["Frontend Developer", "Mobile App Developer"],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "توسعه‌دهنده فرانت‌اند و موبایل",
+        "description": "تخصص در طراحی رابط کاربری و توسعه اپلیکیشن‌های مدرن."
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "دانشگاه آزاد اسلامی اصفهان"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "اصفهان",
+        "addressCountry": "IR"
+      },
+      "knowsAbout": [
+        "Frontend Development", "UI Design", "WordPress", 
+        "JavaScript", "Responsive Design", "Mobile App Development"
+      ],
+      "sameAs": [
+        "https://github.com/fkpoub-byute",
+        "https://www.linkedin.com/in/mrashrafi",
+        "https://t.me/AA_ASHRAFI"
+      ],
+      "worksFor": {
+        "@type": "ProfessionalService",
+        "name": "خدمات توسعه و طراحی وب علی اشرفی",
+        "description": "طراحی سایت شرکتی، طراحی UI، توسعه فرانت‌اند و وردپرس."
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "http://mrashrafi.ir/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "خانه", "item": "http://mrashrafi.ir/" }
+      ]
     }
-    </script>
+  ]
+}
+</script>
+
 
     <!-- ══════════ Preconnect & Fonts (Performance + Security) ══════════ -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -198,11 +169,29 @@
 
             <!-- Nav -->
             <nav class="main-nav" id="mainNav" role="navigation" aria-label="منوی اصلی سایت">
-                <a href="#hero">خانه</a>
-                <a href="#about">درباره من</a>
-                <a href="#skills">مهارت‌ها</a>
-                <a href="#projects">پروژه‌ها</a>
+
+                <a href="#hero" class="nav-link" aria-current="page" data-scroll>
+                    خانه
+                </a>
+
+                <a href="#about" class="nav-link" data-scroll>
+                    درباره من
+                </a>
+
+                <a href="#projects" class="nav-link" data-scroll>
+                    پروژه‌ها
+                </a>
+
+                <a href="#skills" class="nav-link" data-scroll>
+                    مهارت‌ها
+                </a>
+
+                <a href="#contact" class="nav-link" data-scroll>
+                    تماس
+                </a>
+
             </nav>
+
 
             <!-- Logo -->
             <div class="brand">
@@ -511,31 +500,34 @@
                 </p>
 
                 <div class="cta-actions">
-                    <a href="mailto:ali.1600.ashrafi@email.com" class="cta-btn magnetic" rel="noopener noreferrer">
+                    <a href="mailto:ali.1600.ashrafi@gmail.com" class="cta-btn magnetic"
+                        aria-label="ارسال ایمیل برای شروع پروژه با علی اشرفی">
                         شروع پروژه
                     </a>
                 </div>
 
-                <div class="cta-socials">
+                <div class="cta-socials" aria-label="شبکه‌های اجتماعی علی اشرفی">
 
-                    <a href="https://www.linkedin.com/in/ali-ashrafii" class="neon-icon"
-                        aria-label="پروفایل لینکدین علی" target="_blank" rel="noopener noreferrer nofollow">
+                    <a href="https://www.linkedin.com/in/mrashrafi" class="neon-icon"
+                        aria-label="مشاهده پروفایل لینکدین علی اشرفی" title="LinkedIn" target="_blank"
+                        rel="noopener noreferrer">
                         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24">
                             <path
                                 d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.3h.07c.67-1.26 2.3-2.6 4.73-2.6C22.2 7.7 24 10 24 14v10h-5v-9c0-2.15-.04-4.9-3-4.9-3 0-3.46 2.34-3.46 4.75V24H8z" />
                         </svg>
                     </a>
 
-                    <a href="https://github.com/fkpoub-byute" class="neon-icon" aria-label="پروفایل گیت‌هاب علی"
-                        target="_blank" rel="noopener noreferrer nofollow">
+                    <a href="https://github.com/fkpoub-byute" class="neon-icon"
+                        aria-label="مشاهده پروفایل گیت‌هاب علی اشرفی" title="GitHub" target="_blank"
+                        rel="noopener noreferrer">
                         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24">
                             <path
                                 d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.96.57.1.78-.25.78-.56v-2.02c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.27-1.68-1.27-1.68-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.24 3.32.95.1-.74.4-1.24.73-1.53-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.3 1.18-3.11-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18A11.07 11.07 0 0 1 12 6.8c.98 0 1.97.13 2.9.38 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.73.81 1.18 1.85 1.18 3.11 0 4.43-2.69 5.4-5.25 5.69.41.35.78 1.04.78 2.1v3.11c0 .31.2.67.79.56A10.99 10.99 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z" />
                         </svg>
                     </a>
 
-                    <a href="https://t.me/@AA_ASHRAFI" class="neon-icon" aria-label="کانال تلگرام علی" target="_blank"
-                        rel="noopener noreferrer nofollow">
+                    <a href="https://t.me/AA_ASHRAFI" class="neon-icon" aria-label="ارتباط با علی اشرفی در تلگرام"
+                        title="Telegram" target="_blank" rel="noopener noreferrer">
                         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24">
                             <path
                                 d="M9.04 15.47 8.7 20.1c.53 0 .76-.23 1.04-.5l2.5-2.39 5.18 3.8c.95.52 1.62.25 1.86-.88l3.37-15.8c.3-1.38-.5-1.92-1.43-1.58L1.2 9.6c-1.34.52-1.32 1.27-.23 1.6l4.6 1.44 10.67-6.72c.5-.3.95-.14.58.2" />
@@ -551,13 +543,14 @@
     </main>
 
     <footer class="site-footer-v2">
-        <div class="footer-noise"></div>
-        <div class="footer-orb footer-orb-1"></div>
-        <div class="footer-orb footer-orb-2"></div>
+        <div class="footer-noise" aria-hidden="true"></div>
+        <div class="footer-orb footer-orb-1" aria-hidden="true"></div>
+        <div class="footer-orb footer-orb-2" aria-hidden="true"></div>
 
         <div class="footer-container-v2">
             <div class="footer-heading-row">
                 <span class="footer-label">Frontend Developer</span>
+
                 <h2 class="footer-main-title">
                     پایان هر اسکرول،
                     <span>شروع یک همکاری خوبه.</span>
@@ -579,23 +572,46 @@
 
                 <div class="footer-links-col">
                     <h3>نقشه سایت</h3>
+
                     <ul>
                         <li><a href="#hero">خانه</a></li>
                         <li><a href="#about">درباره من</a></li>
-                        <li><a href="#skills">مهارت‌ها</a></li>
                         <li><a href="#projects">پروژه‌ها</a></li>
+                        <li><a href="#skills">مهارت‌ها</a></li>
                         <li><a href="#contact">تماس</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-links-col">
-                    <h3>راه های ارتباطی</h3>
+                    <h3>راه‌های ارتباطی</h3>
+
                     <ul>
-                        <li><a href="mailto:ali.1600.ashrafi@gmail.com">Email</a></li>
-                        <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
-                        <li><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+                        <li>
+                            <a href="mailto:ali.1600.ashrafi@gmail.com" aria-label="ارسال ایمیل به علی اشرفی">
+                                Email
+                            </a>
                         </li>
-                        <li><a href="https://t.me/yourusername" target="_blank" rel="noopener">Telegram</a></li>
+
+                        <li>
+                            <a href="https://github.com/fkpoub-byute" target="_blank" rel="noopener noreferrer"
+                                aria-label="مشاهده پروفایل گیت‌هاب علی اشرفی">
+                                GitHub
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/mrashrafi" target="_blank" rel="noopener noreferrer"
+                                aria-label="مشاهده پروفایل لینکدین علی اشرفی">
+                                LinkedIn
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://t.me/AA_ASHRAFI" target="_blank" rel="noopener noreferrer"
+                                aria-label="ارتباط با علی اشرفی در تلگرام">
+                                Telegram
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -603,17 +619,17 @@
             <div class="footer-bottom-v2">
                 <div class="footer-signature">
                     <span class="footer-availability">
-                        <span class="availability-dot"></span>
+                        <span class="availability-dot" aria-hidden="true"></span>
                         آماده برای شروع همکاری
                     </span>
                 </div>
 
                 <p class="footer-copy">
-                    ساخته شده با ظرافت ، دقت و ❤️‍🔥
+                    ساخته شده با ظرافت، دقت و ❤️‍🔥
                 </p>
 
                 <button class="footer-top-btn" id="backToTop" type="button" aria-label="بازگشت به بالا">
-                    <svg class="top-icon" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <svg class="top-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                         <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
@@ -621,16 +637,18 @@
 
             </div>
         </div>
-        <!-- اضافه کردن نشان آخرین به‌روزرسانی -->
-        <div class="footer-update-badge">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+
+        <!-- Last Updated Badge -->
+        <div class="footer-update-badge" aria-label="آخرین به‌روزرسانی سایت">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
                 <path
                     d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
             </svg>
+
             آخرین آپدیت: خرداد ۱۴۰۵
         </div>
     </footer>
-
 
     <div id="resumeToast" class="resume-toast">
         بزودی قرار می‌گیره 😉
@@ -640,7 +658,7 @@
         <div class="status-content">
             <span class="status-icon">📖</span>
             <span class="status-text">
-                در حال مطالعه کتاب: Clean Code
+                در حال یادگیری JS
             </span>
         </div>
 
