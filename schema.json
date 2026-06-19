@@ -1,0 +1,16 @@
+<script type="application/ld+json">
+
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ali Ashrafi",
+    "url": "https://mrashrafi.ir",
+    "jobTitle": "Frontend Developer",
+    "sameAs": [
+        "https://github.com/fkpoub-byute",
+        "https://www.linkedin.com/in/mrashrafi",
+        "https://t.me/AA_ASHRAFI"
+    ]
+}
+
+</script>
